@@ -11,7 +11,7 @@
       // Hooper,
     },
     props: {
-      neues: {
+      brands: {
         type: Array,
         default: Array,
       },

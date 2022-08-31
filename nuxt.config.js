@@ -56,7 +56,7 @@ export default {
 
   loading: {
     color: 'yellow',
-    height: '2px',
+    height: '1px',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
