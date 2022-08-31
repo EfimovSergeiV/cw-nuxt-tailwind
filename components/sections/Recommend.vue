@@ -9,7 +9,7 @@
           <div v-for="product in recommends" :key="product.id" class="bg-white rounded-sm dark:bg-gray-900">
             <a :href="product.preview_image" class="group">
 
-              <Product :product="product" />
+              <ProductCard :product="product" />
 
             </a>            
           </div>
@@ -22,11 +22,11 @@
 </template>
   
 <script>
-import Product from '../Product.vue';
+import ProductCard from '../ProductCard.vue';
   export default {
     name: 'RecommendSection',
     components: {
-    Product
+      ProductCard
 },
     props: {
       recommends: {
