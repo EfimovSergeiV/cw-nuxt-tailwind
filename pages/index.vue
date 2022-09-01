@@ -20,6 +20,7 @@ import MWeld from '~/components/sections/MWeld.vue'
 import Svarog from '~/components/sections/Svarog.vue'
 import Recommend from '~/components/sections/Recommend.vue'
 import Latest from '~/components/sections/Latest.vue'
+import CartModal from '~/components/CartModal.vue'
 export default {
   name: 'IndexPage',
   components: {
@@ -29,7 +30,8 @@ export default {
     MWeld,
     Svarog,
     Recommend,
-    Latest
+    Latest,
+    CartModal
 },
   async asyncData({ $axios }) {
     const banners = await $axios.$get('c/mainbanner/')

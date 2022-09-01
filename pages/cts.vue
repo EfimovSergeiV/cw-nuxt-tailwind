@@ -1,6 +1,9 @@
 <template>
     <div>
       <h1>Категории</h1>
+
+      <nuxt-link to="products/page" class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">LIST RPODUCTS</nuxt-link>
+
       <small>{{ cts }}</small>
   
     </div>
