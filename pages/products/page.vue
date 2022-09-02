@@ -1,14 +1,12 @@
 <template>
     <div>
-      <h1>PRODUCTS</h1>
 
       <Breadcrumbs />
       <TwoModal />
       <Pagination />
-      
-      <Products :products="response.results" />
-  
+      <Products :products="response.results" />  
       <Pagination />
+      
     </div>
   </template>
   
