@@ -1,6 +1,6 @@
 <template>
   <section id="" class="">
-    <small>{{ mweld }}</small>
+
   </section>
 </template>
   

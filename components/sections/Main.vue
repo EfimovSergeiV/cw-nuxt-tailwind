@@ -1,12 +1,8 @@
 <template>
-  <section id="" class="">
-    <!-- <small>{{ cts }}</small>
-    <small>{{ banners }}</small> -->
+  <section id="" class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+
     <h1>Main section</h1>
-    <video class="w-96" controls>
-      <source src="https://www.youtube.com/embed/SakTd5qGn24?autoplay=0&amp;loop=1&amp;&amp;playlist=SakTd5qGn24" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+
   </section>
 </template>
 

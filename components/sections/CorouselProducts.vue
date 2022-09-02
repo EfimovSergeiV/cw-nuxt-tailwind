@@ -1,6 +1,6 @@
 <template>
   <section id="" class="mt-4">
-    <small>{{ neues }}</small>
+
   </section>
 </template>
   

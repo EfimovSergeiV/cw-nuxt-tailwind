@@ -1,6 +1,6 @@
 <template>
   <section id="" class="">
-    <small>{{ latest }}</small>
+
   </section>
 </template>
   

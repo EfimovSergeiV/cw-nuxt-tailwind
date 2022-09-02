@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class',
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -8,19 +8,18 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
-  // variants: {
-  //   backgroundColor: [
-  //     "dark",
-  //     "dark-hover",
-  //     "dark-group-hover",
-  //     "dark-even",
-  //     "dark-odd"
-  //   ],
-  //   borderColor: ["dark", "dark-focus", "dark-focus-within"],
-  //   textColor: ["dark", "dark-hover", "dark-active"]
-  // },
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        sm: '520px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      },
+      container: {
+        center: true,
+      },
+    },
   },
   variants: {
     extend: {},
