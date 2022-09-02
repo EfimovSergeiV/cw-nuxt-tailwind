@@ -3,7 +3,11 @@
 
     <Navbar />
     <Header />
-    <Nuxt class="mx-auto p-4" />
+    
+    <transition name="fade" mode="out-in">
+      <Nuxt class="mx-auto p-4" />
+    </transition>
+    
     <Footer />
 
   </div>
