@@ -17,17 +17,21 @@
 
     <div class="grid grid-flow-row auto-rows-max">
       <div class="grid grid-flow-col auto-cols-max">
-        <div><button type="button" class="mdi mdi-24px mdi-equalizer-outline text-gray-700"></button></div>
-        <div><button type="button" class="mdi mdi-24px mdi-heart-multiple-outline text-gray-700"></button></div>
-        <div>
-          <button type="button" class="mdi mdi-16px mdi-cart-outline inline-flex items-center rounded-md border border-transparent bg-yellow-400 px-4 py-2 text-base font-semibold text-gray-800 shadow-sm hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-            В корзину
-          </button>
-        </div>
+
+          <div class="px-2 py-1">
+            <button type="button" class="mdi mdi-24px mdi-equalizer-outline text-gray-700 dark:text-gray-300"></button>
+          </div>
+          <div class="px-2 py-1">
+            <button type="button" class="mdi mdi-24px mdi-heart-multiple-outline text-gray-700 dark:text-gray-300"></button>
+          </div>
+          <div class="px-2 py-1">
+            <button type="button" class="mdi mdi-16px mdi-cart-outline inline-flex items-center rounded-sm border border-transparent bg-yellow-400 px-2 py-1 text-base text-gray-800 shadow-sm hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              В корзину
+            </button>
+          </div>          
+
       </div>
     </div>
-
-
 
 
   </div>
