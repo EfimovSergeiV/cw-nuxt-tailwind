@@ -19,6 +19,10 @@ module.exports = {
       container: {
         center: true,
       },
+      colors: {
+        'yellow-450': '#f8dc08',
+        'yellow-550': '#baa50a',
+      },
     },
   },
   variants: {
