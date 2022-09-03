@@ -8,7 +8,7 @@
           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-8 md:px-8 lg:px-8 py-2.5">
               <a href="https://flowbite.com" class="flex items-center">
                   <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-                  <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                  <span class="self-center text-md font-semibold whitespace-nowrap dark:text-white">Главный сварщик</span>
               </a>
               <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
                       <span class="sr-only">Open main menu</span>
@@ -99,7 +99,20 @@
                             </a>
                         </li>
                     </ul>
+                    <!-- <ul>
+                      <li>
+                          <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                              <div class="font-semibold">Marketing CRM</div>
+                              <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                          </a>
+                      </li>
+                    </ul> -->
                 </div>
+                <div class="px-10 py-4">
+                  <a href="#" class="text-right">
+                      <div class="font-semibold">Все категории</div>
+                  </a>
+                </div> 
               </div>
             </transition>
 
