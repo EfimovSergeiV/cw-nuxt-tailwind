@@ -6,25 +6,20 @@
       <img :src="product.preview_image" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
     </div>
 
-    <p class="mt-1 text-lg text-right font-medium text-gray-900 dark:text-gray-200">{{ product.prod_price[0].price.toLocaleString() }} руб.</p>
+    <h5 class="mt-1 text-lg text-right font-medium text-gray-900 dark:text-gray-200">{{ product.prod_price[0].price.toLocaleString() }} руб.</h5>
     <p class="mt-1 text-sm text-right font-medium text-gray-900 dark:text-gray-200">В наличии</p>
     <h3 class="mt-4 h-24 text-sm text-gray-700 dark:text-gray-200 text-center">{{ product.name }}</h3>
-    
 
+    <div class="grid grid-flow-row auto-rows-max justify-items-end">
+      <div class="grid grid-flow-col auto-cols-max items-center">
 
-
-
-
-    <div class="grid grid-flow-row auto-rows-max">
-      <div class="grid grid-flow-col auto-cols-max">
-
-          <div class="px-2 py-1">
-            <button type="button" class="mdi mdi-24px mdi-equalizer-outline text-gray-700 dark:text-gray-300 focus:outline-none"></button>
+          <div class="px-2">
+            <button type="button" class="mdi mdi-24px mdi-equalizer-outline text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:outline-none"></button>
           </div>
-          <div class="px-2 py-1">
-            <button type="button" class="mdi mdi-24px mdi-heart-multiple-outline text-gray-700 dark:text-gray-300 focus:outline-none"></button>
+          <div class="px-2">
+            <button type="button" class="mdi mdi-24px mdi-heart-multiple-outline text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:outline-none"></button>
           </div>
-          <div class="px-2 py-1">
+          <div class="py-1">
             <button type="button" class="mdi mdi-16px mdi-cart-outline inline-flex items-center rounded-sm border border-transparent bg-yellow-400 px-2 py-1 text-base text-gray-800 shadow-sm hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               В корзину
             </button>
