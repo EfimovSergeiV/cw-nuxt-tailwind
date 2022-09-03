@@ -105,7 +105,7 @@
   // import ProductCard from '../ProductCard.vue';
     
   export default {
-    name: 'Navbar',
+    name: 'Navbar1',
     components: {
       // ProductCard
   },
