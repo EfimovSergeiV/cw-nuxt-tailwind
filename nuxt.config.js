@@ -45,7 +45,16 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
   ],
+
+  // render: {
+  //   // Setting up cache for 'static' directory - a year in milliseconds
+  //   // https://web.dev/uses-long-cache-ttl
+  //   static: {
+  //     maxAge: 60 * 60 * 24 * 365 * 1000,
+  //   },
+  // },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
