@@ -1,7 +1,6 @@
 <template>
-  <div class="container fixed">
+  <div class="container absolute">
     <div class="mx-auto px-4 lg:max-w-7xl lg:px-8">
-      <div class="">
         <nav class="">
       
           <div class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
@@ -23,18 +22,20 @@
                           <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" @click="menu = !menu">Каталог <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Избранное</a>
-                      </li>
-                      <li>
                           <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Корзина</a>
                       </li>
                       <li>
                           <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Магазины</a>
                       </li>
+                      <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" @click="profile = !profile">Профиль</a>                     
+                      </li>
                   </ul>
               </div>
           </div>
         </div>
+
+
 
           <transition name="fade">
             <div v-if="menu" id="mega-menu-full-dropdown" :class="[menu ? '' : 'hidden', 'mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600']">
@@ -115,15 +116,31 @@
                 </div> 
               </div>
             </transition>
+      
+        </nav>
+  
+        <transition name="fade">
+          <div v-if="profile" class="absolute right-10 z-10 mt-2 w-60 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <div class="block">
+              <p class="px-4 py-2 text-sm text-gray-700">Тема: 
+                <button type="button" v-if="$colorMode.preference === 'dark'" @click="$colorMode.preference = 'system'" class="text-sm text-gray-700"> Тёмная</button>
+                <button type="button" v-if="$colorMode.preference === 'light'" @click="$colorMode.preference = 'dark'" class="text-sm text-gray-700"> Светлая</button>
+                <button type="button" v-if="$colorMode.preference === 'system'" @click="$colorMode.preference = 'light'" class="text-sm text-gray-700"> Системная</button>
+              </p>
+            </div>
+            
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+          </div>
+        </transition>
+
+      </div>
 
 
 
       
-        </nav>
-  
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -144,6 +161,7 @@
       return {
         mobilemenu: false,
         menu: false,
+        profile: false,
       }
     },
   }
