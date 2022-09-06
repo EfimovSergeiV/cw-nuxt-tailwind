@@ -12,18 +12,18 @@
   
 <script>
   import Products from '~/components/sections/Products.vue'
-import Breadcrumbs from '~/components/Breadcrumbs.vue'
-import TwoModal from '~/components/TwoModal.vue'
-import Pagination from '~/components/Pagination.vue'
+  import Breadcrumbs from '~/components/Breadcrumbs.vue'
+  import TwoModal from '~/components/TwoModal.vue'
+  import Pagination from '~/components/Pagination.vue'
 
   export default {
-    name: 'CtsPage',
+    name: 'ProductsPage',
       components: {
-    Products,
-    Breadcrumbs,
-    TwoModal,
-    Pagination
-},
+        Products,
+        Breadcrumbs,
+        TwoModal,
+        Pagination
+    },
     async asyncData({ query, $axios }) {
       const brands = await $axios.$get(`c/ctbrand/`, {
         params: { ct: query.ct },

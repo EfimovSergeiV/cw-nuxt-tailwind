@@ -33,6 +33,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/postcss8',
+    '@nuxt/image',
   ],
 
   colorMode: {
@@ -47,7 +48,15 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
+    '@nuxt/image',
   ],
+
+  // image: {
+  //   provider: 'api-gls',
+  //   twicpics: {
+  //     baseURL: 'https://nuxt-demo.twic.pics'
+  //   }
+  // }
 
   // render: {
   //   // Setting up cache for 'static' directory - a year in milliseconds

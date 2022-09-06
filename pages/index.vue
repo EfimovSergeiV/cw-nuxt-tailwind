@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <Main :cts="cts" :banners="banners" />
+    <!-- <Main :cts="cts" :banners="banners" /> -->
     <ESAB :esab="esab" />
     <CorouselProducts :neues="neues" />
     <MWeld :mweld="mweld" />
