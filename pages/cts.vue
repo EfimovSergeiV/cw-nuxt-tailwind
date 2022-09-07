@@ -1,7 +1,7 @@
 <template>
     <div class="mx-auto py-2 px-4 lg:max-w-7xl lg:px-8">
 
-      <!-- <nuxt-link to="products/page" class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">LIST RPODUCTS</nuxt-link> -->
+      <!-- <nuxt-link class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">LIST RPODUCTS</nuxt-link> -->
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
 
@@ -11,7 +11,7 @@
 
             <div class="flex flex-col">
               <div>
-                <p>{{ ct.name }}</p>
+                <nuxt-link to="products/page" class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ ct.name }}</nuxt-link>
               </div>
              
 
