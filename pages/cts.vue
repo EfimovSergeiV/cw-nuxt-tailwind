@@ -9,16 +9,16 @@
 
             <div class="w-full p-2">
               <div>
-                <nuxt-link to="products/page" class="text-gray-400 hover:text-white rounded-md text-sm font-medium">
+                <nuxt-link to="products/page" class="text-gray-200 hover:text-white rounded-md text-sm font-medium">
                   <h2>{{ ct.name }}</h2>
                 </nuxt-link>
               </div>
              
 
-              <div>
+              <div class="mt-4">
                 <div v-for="sct in ct.inserted" :key="sct.id" >
                   <div>
-                    <nuxt-link to="#" class="text-gray-400 hover:text-white rounded-md text-sm font-medium">
+                    <nuxt-link to="#" class="text-gray-300 hover:text-white rounded-md text-sm font-medium">
                       {{ sct.name }}
                     </nuxt-link>
                   </div>

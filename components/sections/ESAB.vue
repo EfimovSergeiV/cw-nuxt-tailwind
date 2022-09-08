@@ -11,8 +11,8 @@
     },
     props: {
       esab: {
-        type: Array,
-        default: Array,
+        type: Object,
+        default: Object,
       },
     },
     data() {

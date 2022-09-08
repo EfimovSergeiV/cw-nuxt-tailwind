@@ -3,7 +3,7 @@
 
     <!-- <Main :cts="cts" :banners="banners" /> -->
     <ESAB :esab="esab" />
-    <CorouselProducts :neues="neues" />
+    <CorouselProducts :latest="latest" />
     <MWeld :mweld="mweld" />
     <Svarog :mpromobs="mpromobs" />
     <Recommend :recommends="recommends" />
@@ -41,7 +41,7 @@ export default {
     const mpromobs = await $axios.$get('c/mpromob/')
     const recommends = await $axios.$get(`c/recommend/`)
     const mweld = await $axios.$get(`c/prod/1835/`)
-    return { banners, cts, latest, mpromobs, esab, recommends, mweld }
+    return { banners, cts, latest, mpromobs, esab, recommends }
   },
   data() {
     return {

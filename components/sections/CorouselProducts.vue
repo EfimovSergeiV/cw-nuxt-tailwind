@@ -11,7 +11,7 @@
       // Hooper,
     },
     props: {
-      neues: {
+      latest: {
         type: Array,
         default: Array,
       },

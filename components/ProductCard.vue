@@ -12,9 +12,12 @@
       />
     </div>
 
-    <p class="text-lg text-right font-medium text-gray-900 dark:text-gray-200">{{ product.prod_price[0].price.toLocaleString() }} руб.</p>
-    <p class="text-sm text-right font-medium text-gray-900 dark:text-gray-200">В наличии</p>
-    <p class="mt-2 h-16 text-sm text-gray-700 dark:text-gray-200 text-center">{{ product.name }}</p>
+    <nuxt-link to="#">
+      <p class="text-lg text-right font-medium text-gray-900 dark:text-gray-200">{{ product.prod_price[0].price.toLocaleString() }} руб.</p>
+      <p class="text-sm text-right font-medium text-gray-900 dark:text-gray-200">В наличии</p>
+      <p class="mt-2 h-16 text-sm text-gray-700 dark:text-gray-200 text-center">{{ product.name }}</p>
+    </nuxt-link>
+
 
     <div class="grid grid-flow-col justify-items-end">
       <button type="button" class="mdi mdi-24px mdi-equalizer-outline text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:outline-none transition duration-300 delay-150 hover:delay-300"></button>

@@ -13,8 +13,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background-color: #202020;
 }
 
@@ -51,37 +51,37 @@ dd {
 
 h1 {
 	display: block;
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1.5em;
+  /* font-weight: bold; */
 }
 
 h2 {
 	display: block;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.4em;
+  /* font-weight: bold; */
 }
 
 h3 {
 	display: block;
   font-size: 1.17em;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 h4 {
 	display: block;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 h5 {
 	display: block;
   font-size: .83em;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 h6 {
   display: block;
   font-size: .67em;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 hr {

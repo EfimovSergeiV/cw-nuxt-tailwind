@@ -111,7 +111,7 @@
                 </div>
                 <div class="px-10 py-4">
                   <nuxt-link to="/cts" class="text-right">
-                      <div class="font-semibold">Все категории</div>
+                      <h3>Все категории</h3>
                   </nuxt-link>
                 </div> 
               </div>
