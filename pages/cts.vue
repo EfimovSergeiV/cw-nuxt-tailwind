@@ -7,22 +7,22 @@
 
             
 
-            <div class="w-full">
-              <div class="">
-                <nuxt-link to="products/page" class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            <div class="w-full p-2">
+              <div>
+                <nuxt-link to="products/page" class="text-gray-400 hover:text-white rounded-md text-sm font-medium">
                   <h2>{{ ct.name }}</h2>
                 </nuxt-link>
               </div>
              
 
-              <div class="flex flex-col">
+              <div>
                 <div v-for="sct in ct.inserted" :key="sct.id" >
                   <div>
-                    <nuxt-link to="#" class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                    <nuxt-link to="#" class="text-gray-400 hover:text-white rounded-md text-sm font-medium">
                       {{ sct.name }}
                     </nuxt-link>
                   </div>
-                  
+
                 </div>
               </div>
 
