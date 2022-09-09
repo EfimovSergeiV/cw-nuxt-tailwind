@@ -41,7 +41,7 @@ export default {
     const mpromobs = await $axios.$get('c/mpromob/')
     const recommends = await $axios.$get(`c/recommend/`)
     const mweld = await $axios.$get(`c/prod/1835/`)
-    return { banners, cts, latest, mpromobs, esab, recommends }
+    return { banners, cts, latest, mpromobs, esab, recommends, mweld }
   },
   data() {
     return {

@@ -8,11 +8,11 @@
         loading=lazy
         width="235"
         height="177"
-        class="h-full w-full object-cover object-center group-hover:opacity-75" 
+        class="h-full w-full object-cover object-center" 
       />
     </div>
 
-    <nuxt-link to="#">
+    <nuxt-link to="/product/158">
       <p class="text-lg text-right font-medium text-gray-900 dark:text-gray-200">{{ product.prod_price[0].price.toLocaleString() }} руб.</p>
       <p class="text-sm text-right font-medium text-gray-900 dark:text-gray-200">В наличии</p>
       <p class="mt-2 h-16 text-sm text-gray-700 dark:text-gray-200 text-center">{{ product.name }}</p>

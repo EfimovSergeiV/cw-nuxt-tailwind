@@ -3,28 +3,75 @@
 
     <div class="mx-auto py-2 px-4 lg:max-w-7xl lg:px-8">
 
-      <div class="bg-white rounded-sm border dark:border-gray-700 dark:bg-gray-800 shadow-md p-2">
+      <div class="bg-white rounded-sm border dark:border-gray-700 dark:bg-gray-800 shadow-md  mb-2">
 
-        <div class="">
+        <div class="p-2">
           <h1>{{ product.name }}</h1>
-          <h6>{{ product.name }}</h6>
         </div>
-        <div>
-          <img src="https://api.glsvar.ru/files/img/c/preview/strong-400.png" width="235" height="177" class="rounded-sm"/>
-        </div>
-
-
-        <div>
-          <p> {{ product.decription }}</p>
-        </div>
-        
-
-        <div v-for="param in product.propstrmodel" :key="param.id">
-          <p> {{ param.name }}  {{ param.value }}</p>
-        </div>
-        
-        
       </div>
+
+
+      <div class="grid grid-cols-3 gap-2 mt-2 mb-2">
+
+        <div class="bg-white rounded-sm border dark:border-gray-700 dark:bg-gray-800 shadow-md p-2">
+          <div class="flex justify-center bg-white h-full w-full rounded-sm">
+
+            <div class="flex items-stretch ...">
+              <div>
+                <img src="https://api.glsvar.ru/files/img/c/preview/strong-400.png" width="235" height="177" class="rounded-sm"/>
+              </div>
+
+              
+            </div>
+              
+
+
+            
+
+          </div>
+        </div>
+
+        <div class="bg-white rounded-sm border dark:border-gray-700 dark:bg-gray-800 shadow-md p-2">
+          <div class="mt-4">
+            <div v-for="param in product.propstrmodel" :key="param.id">
+              <small> {{ param.name }}  {{ param.value }}</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-sm border dark:border-gray-700 dark:bg-gray-800 shadow-md p-2">
+          <div>
+            <p> {{ product.decription }}</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-sm border dark:border-gray-700 dark:bg-gray-800 shadow-md p-2">
+          <div class="mt-4">
+            <div v-for="param in product.propstrmodel" :key="param.id">
+              <small> {{ param.name }}  {{ param.value }}</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+        
+      <div class="bg-white rounded-sm border dark:border-gray-700 dark:bg-gray-800 shadow-md p-2 ">
+        <button type="button" class="mdi mdi-24px mdi-equalizer-outline text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:outline-none transition duration-300 delay-150 hover:delay-300"></button>
+        <button type="button" class="mdi mdi-24px mdi-heart-multiple-outline text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:outline-none transition duration-300 delay-150 hover:delay-300"></button>
+        <button type="button" class="mdi mdi-16px mdi-cart-outline rounded-sm bg-yellow-450 px-2 py-1 text-base text-gray-800 shadow-sm hover:bg-yellow-550 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 transition duration-300 delay-150 hover:delay-300">
+          В корзину
+        </button>
+      </div>
+      
+
+
+
+
+
     </div>
 
   </section>
