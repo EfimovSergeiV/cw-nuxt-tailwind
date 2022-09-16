@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
+  <div class="bg-gray-100 bg-gradient-to-r dark:from-gray-900 dark:to-gray-800 dark:text-gray-200">
     <div class="container mx-auto">
 
       <Navbar />
