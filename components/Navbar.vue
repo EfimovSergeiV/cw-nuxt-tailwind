@@ -35,96 +35,98 @@
             </div>
           </div>
 
+
+
+
+
+
           <div class="menu-section">
             <div class="relative">
               <div class="absolute w-full">
-                <p>Hallo welt</p>
+
+                <transition name="fade">
+                  <div v-if="menu" id="mega-menu-full-dropdown" :class="[menu ? '' : 'hidden', 'mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600']">
+                      <div class="grid py-5 px-4 mx-auto max-w-screen-xl text-gray-900 dark:text-white sm:grid-cols-2 md:grid-cols-3 md:px-6">
+                          <ul aria-labelledby="mega-menu-full-dropdown-button">
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Online Stores</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Segmentation</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Marketing CRM</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                          </ul>
+                          <ul>
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Online Stores</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Segmentation</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Marketing CRM</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                          </ul>
+                          <ul class="hidden md:block">
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Audience Management</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Creative Tools</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <div class="font-semibold">Marketing Automation</div>
+                                      <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                  </a>
+                              </li>
+                          </ul>
+                          <!-- <ul>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Marketing CRM</div>
+                                    <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                          </ul> -->
+                      </div>
+                      <div class="px-10 py-4">
+                        <nuxt-link to="/cts" class="text-right">
+                            <h3>Все категории</h3>
+                        </nuxt-link>
+                      </div> 
+                    </div>
+                  </transition>
+
               </div>
             </div>
           </div>
-
-
-
-          <transition name="fade">
-            <div v-if="menu" id="mega-menu-full-dropdown" :class="[menu ? '' : 'hidden', 'mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600']">
-                <div class="grid py-5 px-4 mx-auto max-w-screen-xl text-gray-900 dark:text-white sm:grid-cols-2 md:grid-cols-3 md:px-6">
-                    <ul aria-labelledby="mega-menu-full-dropdown-button">
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Online Stores</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Segmentation</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Marketing CRM</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Online Stores</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Segmentation</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Marketing CRM</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="hidden md:block">
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Audience Management</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Creative Tools</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                <div class="font-semibold">Marketing Automation</div>
-                                <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- <ul>
-                      <li>
-                          <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                              <div class="font-semibold">Marketing CRM</div>
-                              <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                          </a>
-                      </li>
-                    </ul> -->
-                </div>
-                <div class="px-10 py-4">
-                  <nuxt-link to="/cts" class="text-right">
-                      <h3>Все категории</h3>
-                  </nuxt-link>
-                </div> 
-              </div>
-            </transition>
-      
         </nav>
   
         <transition name="fade">
